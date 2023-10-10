@@ -1,0 +1,121 @@
+# This is to built dataframes using Pandas 
+import pandas as pd 
+
+# I can 
+
+my_data= pd.DataFrame(my_dictionary) 
+
+# Working with much data
+# Import data from brics.csv
+
+# First column is the index column 
+brics = pd.read("path/to/brics.csv, index_col = 0 ) 
+
+# Pre-defined lists
+names = ['United States', 'Australia', 'Japan', 'India', 'Russia', 'Morocco', 'Egypt']
+dr =  [True, False, False, False, True, True, True]
+cpc = [809, 731, 588, 18, 200, 70, 45]
+
+# Import pandas as pd
+import pandas as pd 
+
+# Create dictionary my_dict with three key:value pairs: my_dict
+my_dict = {
+    'country': names,
+    'drives_right': dr,
+    'cars_per_cap': cpc
+}
+
+
+
+#  Abotu setting the row levels: 
+
+import pandas as pd
+
+# Build cars DataFrame
+names = ['United States', 'Australia', 'Japan', 'India', 'Russia', 'Morocco', 'Egypt']
+dr =  [True, False, False, False, True, True, True]
+cpc = [809, 731, 588, 18, 200, 70, 45]
+cars_dict = { 'country':names, 'drives_right':dr, 'cars_per_cap':cpc }
+cars = pd.DataFrame(cars_dict)
+print(cars)
+
+# Definition of row_labels
+row_labels = ['US', 'AUS', 'JPN', 'IN', 'RU', 'MOR', 'EG']
+
+# Specify row labels of cars
+cars.index =row_labels
+
+# Print cars again
+print(cars)
+
+
+
+
+
+
+# Build a DataFrame cars from my_dict: cars
+cars= pd.DataFrame(my_dict)
+
+# Print cars
+print(cars)
+
+
+
+########################## Read csv as follows: 
+
+# Import pandas as pd
+import pandas as pd 
+
+# Import the cars.csv data: cars
+cars=pd.read_csv('cars.csv')
+
+# Print out cars
+print(cars)
+
+######### 
+
+# Selecte a column 
+
+brics["country"]
+tupe(brics["country"]
+
+
+# With double brackeed is to import as a dataframe 
+brics[["country"]]
+
+## loc 
+
+brics.loc["RU"]
+brics.loc["RU","IN", "CH"]
+
+
+brics.iloc[1]
+
+######
+
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
+
+# Print out first 3 observations
+cars[0:2]
+
+# Print out fourth, fifth and sixth observation
+cars[3:6]
+
+
+
+######
+####
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col=0)
+
+# Print out observation for Japan
+print(cars.loc['JPN'])
+
+# Print out observations for Australia and Egypt
+print(cars.loc[['AUS', 'EG']])
+
+
