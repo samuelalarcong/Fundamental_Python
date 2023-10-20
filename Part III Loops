@@ -1,0 +1,64 @@
+#Now I am going to create a lool 
+
+# Initialize offset
+offset = -6
+
+# Code the while loop
+while offset != 0:
+    print("correcting...")
+    if offset > 0:
+        offset = offset - 1
+    else:
+        offset = offset + 1
+    print(offset)
+
+
+# Now for loops################################################################################################### 
+
+fam = [1,2,3,4,5,6,7]
+
+for hight in fam: 
+ print (height) 
+
+
+for index, hight in enumerate(fam): 
+print("index"+str(index)+:+str(height)) 
+
+
+
+for var in seq 
+
+
+# areas list
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+
+# Code the for loop
+for height in areas: 
+    print(height)
+
+
+# areas list
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+
+# Change for loop to use enumerate() and update print()
+for index, height in enumerate(areas):
+    print("room " + str(index) + ": " + str(height))
+
+
+# areas list
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+
+# Code the for loop
+for index, area in enumerate(areas) :
+    print("room " + str(index+1) + ": " + str(area))
+
+# house list of lists
+house = [["hallway", 11.25], 
+         ["kitchen", 18.0], 
+         ["living room", 20.0], 
+         ["bedroom", 10.75], 
+         ["bathroom", 9.50]]
+         
+# Build a for loop from scratch
+for x in house :
+    print("the " + x[0] + " is " + str(x[1]) + " sqm")
