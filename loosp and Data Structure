@@ -1,0 +1,88 @@
+# 
+
+# First i create a list for world
+world = {"a":1, "b":2, "c":3}
+
+#print
+
+for key, value in world.items(): 
+print(key,"--",str(value))
+
+# Numpy ray 
+np_height = np.array([1,2,3,4,5,6])
+np_wight  = np.array([1,2,3,4,5,6])
+
+means = np.array([np_height, no_wight])
+
+for val in np-nditer(means): 
+print(val) 
+
+
+# Definition of dictionary
+europe = {'spain':'madrid', 'france':'paris', 'germany':'berlin',
+          'norway':'oslo', 'italy':'rome', 'poland':'warsaw', 'austria':'vienna' }
+          
+# Iterate over europe
+for key, value in europe.items(): 
+    print("the capital of"+ key+ "is"+str(value))
+
+
+
+# Import numpy as np
+import numpy as np
+
+# For loop over np_height
+for x in np_height :
+    print(str(x) + " inches")
+
+# For loop over np_baseball
+for x in np.nditer(np_baseball) :
+    print(x)
+
+
+#pandas data frame and loops 
+
+for lab, row in brics.terrows(): 
+brics.loc[lab, "name_lenght"]= len(row["conuntry"])
+
+
+
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
+
+# Iterate over rows of cars
+for lab, row in cars.iterrows() :
+    print(lab)
+    print(row)
+
+
+
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
+
+# Adapt for loop
+for lab, row in cars.iterrows() :
+    print(lab + ": " + str(row['cars_per_cap']))
+
+
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
+
+# Code for loop that adds COUNTRY column
+for lab, row in cars.iterrows() :
+    cars.loc[lab, "COUNTRY"] = row["country"].upper()
+    
+# Print cars
+print(cars)
+
+# Import cars data
+import pandas as pd
+cars = pd.read_csv('cars.csv', index_col = 0)
+
+# Use .apply(str.upper)
+cars['COUNTRY'] = cars['country'].apply(str.upper)
+
+
